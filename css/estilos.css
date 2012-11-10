@@ -1,6 +1,15 @@
 #inicio-splash-screen{
 	text-align:center;
 }
+#inicio-splash-screen .loading{
+	margin-right:10px;
+}
+#inicio-splash-screen .splash-logo{
+	margin-top:10%;
+}
+#inicio-splash-screen .splash-parrafo{
+	margin-top:3%;
+}
 #inicio-header, #inicio-body{
 	display:none;
 }
