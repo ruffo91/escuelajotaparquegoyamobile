@@ -1,10 +1,19 @@
 jQuery(document).ready(function(){
+	var ejecutado = 0;
 	setTimeout(function(){
 		document.addEventListener("deviceready", dispositivoListo, false);
 	}, 3000);
 });
 
 function dispositivoListo(){
+	ejecutado = 1;
+	ejecutar();
+}
+
+function ejecutar(){
+	if(ejecutado != 1){
+		alert("El dispositivo no está listo...");
+	}
 	var internet = navigator.network.connection.type;
 	if(internet != "none"){
 		jQuery('#inicio-splash-screen').hide();
