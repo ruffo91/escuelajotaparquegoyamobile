@@ -5,14 +5,20 @@ jQuery(document).ready(function(){
 });
 
 function dispositivoListo(){
-	jQuery('#inicio-splash-screen').hide();
-	jQuery('#inicio-contenedor').fadeIn(1000);
-	
-	jQuery('#boton-salir').click(function(){
-		navigator.app.exitApp();
-	});
-	
-	jQuery('#borrar').click(function(){
-		navigator.notification.beep(3);
-	});
+	var internet = navigator.network.connection.type;
+	if(internet != "none"){
+		jQuery('#inicio-splash-screen').hide();
+		jQuery('#inicio-contenedor').fadeIn(1000);
+		
+		jQuery('#boton-salir').click(function(){
+			navigator.app.exitApp();
+		});
+		
+		jQuery('#borrar').click(function(){
+			navigator.notification.beep(3);
+		});
+	}
+	else{
+		alert("Error, no tienes conexión a internet...");
+	}
 }
