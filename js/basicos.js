@@ -24,7 +24,7 @@ function ejecutar(){
 		});
 		
 		jQuery('#borrar').click(function(){
-			navigator.notification.beep(3);
+			navigator.notification.beep(1);
 		});
 	}
 	else{
