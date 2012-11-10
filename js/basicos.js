@@ -19,6 +19,10 @@ function dispositivoListo(){
 		});
 	}
 	else{
-		alert("Error, no tienes conexión a internet...");
+		navigator.notification.confirm('No tienes conexión a internet...', error_salir, 'Error', 'Salir');
 	}
+}
+
+function error_salir(){
+	navigator.app.exitApp();
 }
