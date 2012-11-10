@@ -13,11 +13,25 @@
 	</head>
 	<body>
 		<div data-role="page" id="inicio">
-			<div data-role="header" id="inicio-header">
-				<h1>Escuela de Jota Parque Goya</h1>
-			</div>
-			<div data-role="body" id="inicio-body">
-				<button id="boton">Alerta</button>
+			<div id="inicio-contenedor">
+				<div data-role="header" id="inicio-header">
+					<h1>Escuela de Jota Parque Goya</h1>
+				</div>
+				<div data-role="body" id="inicio-body">
+					<button id="boton">Alerta</button>
+				</div>
+				<div data-role="footer" data-position="fixed">
+					<div id="menu" data-role="navbar" data-conpos="top">
+						<ul>
+							<li>
+								<a href="#" data-icon="gear">Configuración</a>
+							</li>
+							<li>
+								<a href="#" data-icon="delete">Borrar</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div id="inicio-splash-screen">
 				<img class="splash-logo" src="img/logo_resized.png" />
