@@ -8,7 +8,11 @@ function dispositivoListo(){
 	jQuery('#inicio-splash-screen').hide();
 	jQuery('#inicio-contenedor').fadeIn(1000);
 	
-	jQuery('#boton').click(function(){
+	jQuery('#boton-salir').click(function(){
 		navigator.app.exitApp();
+	});
+	
+	jQuery('#borrar').click(function(){
+		navigator.notification.beep(3);
 	});
 }
