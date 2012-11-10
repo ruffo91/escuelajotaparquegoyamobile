@@ -10,6 +10,6 @@
 #inicio-splash-screen .splash-parrafo{
 	margin-top:2em;
 }
-#inicio-header, #inicio-body{
+#inicio-contenedor{
 	display:none;
 }
