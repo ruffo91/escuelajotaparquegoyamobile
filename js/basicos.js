@@ -3,11 +3,7 @@ jQuery(document).ready(function(){
 });
 
 function dispositivoListo(){
-	jQuery('#boton').click(function(){
-		navigator.notification.confirm('Quieres aceptar la alerta?', alerta, 'Alerta', 'Si,No,Quizás');
-	});
-}
-
-function alerta(boton){
-
+	jQuery('#splash-screen').hide();
+	jQuery('#inicio-header').fadeIn(1000);
+	jQuery('#inicio-body').fadeIn(1000);
 }
