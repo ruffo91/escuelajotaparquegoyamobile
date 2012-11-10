@@ -6,5 +6,15 @@ jQuery(document).ready(function(){
 });
 
 function dispositivoListo(){
-	alert("Tu dispositivo está listo para usar la API de PhoneGap.");
+	//alert("Tu dispositivo está listo para usar la API de PhoneGap.");
+	var canvas = jQuery('#misCanvas');
+	var contexto = canvas.getContext("2d");
+	contexto.beginPath();
+	contexto.arc(60, 60, 50, 0, Math.PI*2, true);
+	contecto.closePath();
+	contexto.strokeStyle = "#FF0000";
+	contexto.fillStyle = "#0000FF";
+	contexto.lineWidth = 3;
+	contexto.fill();
+	contexto.stroke();
 }
