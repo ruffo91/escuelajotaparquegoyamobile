@@ -3,6 +3,12 @@ jQuery(document).ready(function(){
 	setTimeout(function(){
 		document.addEventListener("deviceready", dispositivoListo, false);
 	}, 3000);
+	setTimeout(function(){
+		if(ejecutado != 1){
+			navigator.notification.confirm('Imposible conectar...', error_salir, 'Error', 'Salir');
+		}
+	}, 5000);
+	
 });
 
 function dispositivoListo(){
@@ -11,9 +17,6 @@ function dispositivoListo(){
 }
 
 function ejecutar(){
-	if(ejecutado != 1){
-		alert("El dispositivo no está listo...");
-	}
 	var internet = navigator.network.connection.type;
 	if(internet != "none"){
 		jQuery('#inicio-splash-screen').hide();
